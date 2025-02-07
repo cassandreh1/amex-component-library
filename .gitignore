@@ -4,6 +4,16 @@
 /node_modules
 /.pnp
 .pnp.js
+/public
+/src/App.css
+/src/App.js
+/src/App.test.js
+/src/index.css
+/src/index/js
+/src/logo.svg
+/src/react-app-env.d.ts
+/src/reportWebVitals.js
+/src/setupTests.js
 
 # testing
 /coverage
