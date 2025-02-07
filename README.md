@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Component Library Sample
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Due to time constraints for this assignment, I have created a small component library using Create React App.
 
-## Available Scripts
+The components can be found in the following directory:
+📁 'src/components'
 
-In the project directory, you can run:
+This project was bootstrapped with Create React App.
 
-### `npm start`
+## Code Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`/src/
+    /components/
+        /<component-name>/
+            /<component-name>.tsx
+            /<component-name>.type.ts
+            /<component-name>.css
+            /index.ts
+        /index.ts
+    /index.ts`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Components
 
-### `npm test`
+### Naming Conventions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Having clear and concise component and API names enables intuitive documentation, allowing developers to quickly understand the purpose of each component.
 
-### `npm run build`
+### Props (Component Configuration)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To improve developer experience, we use TypeScript to define expected prop values:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    - Helps developers understand what values to pass to components, acting as built-in documentation
+    -  Ensures consistency in how components are integrated across applications
+    - Reduces potential bugs caused by JavaScript type coercion
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+We define prop types as interfaces at the <component-name> level, where the component imports and applies them to ensure maintainability and scalability of the component library.
 
-### `npm run eject`
+📌 Prop Type Example:
+📁 'src/components/input/InputField.types.ts'
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+📌 Component Import Example:
+📁 'src/components/input/InputField.tsx'
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Functions (APIs)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Components include built-in functions/APIs that developers can leverage to implement business logic.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+📌 Function Example:
+📁 'src/components/input/InputField.tsx'
 
-## Learn More
+### Testing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Since this library will be used globally by various teams, it is important to test expected props and API functions.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📌 Unit Test Example:
+📁 'src/components/input/InputField.test.tsx'
