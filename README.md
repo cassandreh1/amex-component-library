@@ -2,14 +2,15 @@
 
 Due to time constraints for this assignment, I have created a small component library using Create React App.
 
-The components can be found in the following directory:
+The components can be found in the following directory:\
 📁 'src/components'
 
 This project was bootstrapped with Create React App.
 
 ## Code Structure
 
-`/src/
+```bash
+/src/
     /components/
         /<component-name>/
             /<component-name>.tsx
@@ -17,7 +18,8 @@ This project was bootstrapped with Create React App.
             /<component-name>.css
             /index.ts
         /index.ts
-    /index.ts`
+    /index.ts
+```
 
 ## Components
 
@@ -30,22 +32,22 @@ Having clear and concise component and API names enables intuitive documentation
 To improve developer experience, we use TypeScript to define expected prop values:
 
     - Helps developers understand what values to pass to components, acting as built-in documentation
-    -  Ensures consistency in how components are integrated across applications
+    - Ensures consistency in how components are integrated across applications
     - Reduces potential bugs caused by JavaScript type coercion
 
 We define prop types as interfaces at the <component-name> level, where the component imports and applies them to ensure maintainability and scalability of the component library.
 
-📌 Prop Type Example:
+📌 Prop Type Example:\
 📁 'src/components/input/InputField.types.ts'
 
-📌 Component Import Example:
+📌 Component Import Example:\
 📁 'src/components/input/InputField.tsx'
 
 ### Functions (APIs)
 
 Components include built-in functions/APIs that developers can leverage to implement business logic.
 
-📌 Function Example:
+📌 Function Example:\
 📁 'src/components/input/InputField.tsx'
 
 ### Testing
