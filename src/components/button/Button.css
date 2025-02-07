@@ -1,0 +1,27 @@
+/* Button sizes */
+.small {
+    width: 25%;
+}
+.medium {
+    width: 50%;
+}
+.large {
+    width: 100%;
+}
+
+/* Button color */
+.red {
+    color: white;
+    background-color: red;
+}
+.blue {
+    color: white;
+    background-color: rgb(0, 111, 207);
+}
+button {
+    height: 50px;
+    border-radius: 9px;
+    font-size: 18px;
+    border: 1px solid;
+    cursor: pointer;
+}
